@@ -1,11 +1,11 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -g -std=c11
+CFLAGS = -Wall -Wextra -g -std=c11 -Iinclude
 
 # Source files
-SRC = main.c Tree.c
+SRC = src/main.c src/Tree.c
 OBJ = $(SRC:.c=.o)
-HEADERS = Tree.h
+HEADERS = include/Tree.h
 
 # Executable name
 TARGET = main
